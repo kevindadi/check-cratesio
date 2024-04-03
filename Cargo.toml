@@ -1,0 +1,45 @@
+[package]
+name = "diesel_demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+diesel = { version = "2.1.0", features = ["postgres"] }
+dotenvy = "0.15"
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1", features = ["full"] }
+chrono = "0.4"
+once_cell = "1.8.0"
+clap = "2"
+walkdir = "2.3.2"
+deadpool-postgres = { version = "0.12.0", features = ["serde"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+# [[bin]]
+# name = "show_posts"
+# doc = false
+
+# [[bin]]
+# name = "write_post"
+# doc = false
+
+# [[bin]]
+# name = "delete_post"
+# doc = false
+
+# [[bin]]
+# name = "publish_post"
+# doc = false
+
+[[bin]]
+name = "get_embedded_crates"
+doc = false
+
+[[bin]]
+name = "local_pta"
+doc = false
+
+[lib]
+doc = false
